@@ -260,7 +260,7 @@ Button dropdowns work with buttons of all sizes, including default and split dro
         <li><a class="dropdown-item" href="#">Separated link</a></li>
       </ul>
     </div><!-- /btn-group -->
-    <div class="btn-group ml-2">
+    <div class="btn-group ms-2">
       <button type="button" class="btn btn-lg btn-secondary">Large split button</button>
       <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
         <span class="visually-hidden">Toggle Dropdown</span>
@@ -287,7 +287,7 @@ Button dropdowns work with buttons of all sizes, including default and split dro
         <li><a class="dropdown-item" href="#">Separated link</a></li>
       </ul>
     </div><!-- /btn-group -->
-    <div class="btn-group ml-2">
+    <div class="btn-group ms-2">
       <button type="button" class="btn btn-sm btn-secondary">Small split button</button>
       <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
         <span class="visually-hidden">Toggle Dropdown</span>
@@ -348,6 +348,11 @@ Button dropdowns work with buttons of all sizes, including default and split dro
 {{< /highlight >}}
 
 ## Directions
+
+{{< callout info >}}
+#### RTL
+Directions are mirrored when using Bootstrap in RTL, meaning `.dropstart` will appear on the right side.
+{{< /callout >}}
 
 ### Dropup
 
@@ -410,10 +415,10 @@ Trigger dropdown menus above elements by adding `.dropup` to the parent element.
 
 ### Dropright
 
-Trigger dropdown menus at the right of the elements by adding `.dropright` to the parent element.
+Trigger dropdown menus at the right of the elements by adding `.dropend` to the parent element.
 
 <div class="bd-example">
-  <div class="btn-group dropright">
+  <div class="btn-group dropend">
     <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
       Dropright
     </button>
@@ -425,9 +430,9 @@ Trigger dropdown menus at the right of the elements by adding `.dropright` to th
       <li><a class="dropdown-item" href="#">Separated link</a></li>
     </ul>
   </div>
-  <div class="btn-group dropright">
+  <div class="btn-group dropend">
     <button type="button" class="btn btn-secondary">
-      Split dropright
+      Split dropend
     </button>
     <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
       <span class="visually-hidden">Toggle Dropright</span>
@@ -443,8 +448,8 @@ Trigger dropdown menus at the right of the elements by adding `.dropright` to th
 </div>
 
 {{< highlight html >}}
-<!-- Default dropright button -->
-<div class="btn-group dropright">
+<!-- Default dropend button -->
+<div class="btn-group dropend">
   <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
     Dropright
   </button>
@@ -453,10 +458,10 @@ Trigger dropdown menus at the right of the elements by adding `.dropright` to th
   </ul>
 </div>
 
-<!-- Split dropright button -->
-<div class="btn-group dropright">
+<!-- Split dropend button -->
+<div class="btn-group dropend">
   <button type="button" class="btn btn-secondary">
-    Split dropright
+    Split dropend
   </button>
   <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
     <span class="visually-hidden">Toggle Dropright</span>
@@ -469,10 +474,10 @@ Trigger dropdown menus at the right of the elements by adding `.dropright` to th
 
 ### Dropleft
 
-Trigger dropdown menus at the left of the elements by adding `.dropleft` to the parent element.
+Trigger dropdown menus at the left of the elements by adding `.dropstart` to the parent element.
 
 <div class="bd-example">
-  <div class="btn-group dropleft">
+  <div class="btn-group dropstart">
     <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
       Dropleft
     </button>
@@ -485,7 +490,7 @@ Trigger dropdown menus at the left of the elements by adding `.dropleft` to the 
     </ul>
   </div>
   <div class="btn-group">
-    <div class="btn-group dropleft" role="group">
+    <div class="btn-group dropstart" role="group">
       <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
         <span class="visually-hidden">Toggle Dropleft</span>
       </button>
@@ -498,14 +503,14 @@ Trigger dropdown menus at the left of the elements by adding `.dropleft` to the 
       </ul>
     </div>
     <button type="button" class="btn btn-secondary">
-      Split dropleft
+      Split dropstart
     </button>
   </div>
 </div>
 
 {{< highlight html >}}
-<!-- Default dropleft button -->
-<div class="btn-group dropleft">
+<!-- Default dropstart button -->
+<div class="btn-group dropstart">
   <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
     Dropleft
   </button>
@@ -514,9 +519,9 @@ Trigger dropdown menus at the left of the elements by adding `.dropleft` to the 
   </ul>
 </div>
 
-<!-- Split dropleft button -->
+<!-- Split dropstart button -->
 <div class="btn-group">
-  <div class="btn-group dropleft" role="group">
+  <div class="btn-group dropstart" role="group">
     <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-expanded="false">
       <span class="visually-hidden">Toggle Dropleft</span>
     </button>
@@ -525,7 +530,7 @@ Trigger dropdown menus at the left of the elements by adding `.dropleft` to the 
     </ul>
   </div>
   <button type="button" class="btn btn-secondary">
-    Split dropleft
+    Split dropstart
   </button>
 </div>
 {{< /highlight >}}
@@ -584,7 +589,7 @@ Add `.disabled` to items in the dropdown to **style them as disabled**.
 
 ## Menu alignment
 
-By default, a dropdown menu is automatically positioned 100% from the top and along the left side of its parent. Add `.dropdown-menu-right` to a `.dropdown-menu` to right align the dropdown menu.
+By default, a dropdown menu is automatically positioned 100% from the top and along the left side of its parent. Add `.dropdown-menu-end` to a `.dropdown-menu` to right align the dropdown menu. Directions are mirrored when using Bootstrap in RTL, meaning `.dropdown-menu-end` will appear on the left side.
 
 {{< callout info >}}
 **Heads up!** Dropdowns are positioned thanks to Popper.js (except when they are contained in a navbar).
@@ -595,7 +600,7 @@ By default, a dropdown menu is automatically positioned 100% from the top and al
   <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
     Right-aligned menu
   </button>
-  <ul class="dropdown-menu dropdown-menu-right">
+  <ul class="dropdown-menu dropdown-menu-end">
     <li><button class="dropdown-item" type="button">Action</button></li>
     <li><button class="dropdown-item" type="button">Another action</button></li>
     <li><button class="dropdown-item" type="button">Something else here</button></li>
@@ -614,7 +619,7 @@ To align **right** the dropdown menu with the given breakpoint or larger, add `.
   <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-expanded="false">
     Left-aligned but right aligned when large screen
   </button>
-  <ul class="dropdown-menu dropdown-menu-lg-right">
+  <ul class="dropdown-menu dropdown-menu-lg-end">
     <li><button class="dropdown-item" type="button">Action</button></li>
     <li><button class="dropdown-item" type="button">Another action</button></li>
     <li><button class="dropdown-item" type="button">Something else here</button></li>
@@ -622,14 +627,14 @@ To align **right** the dropdown menu with the given breakpoint or larger, add `.
 </div>
 {{< /example >}}
 
-To align **left** the dropdown menu with the given breakpoint or larger, add `.dropdown-menu-right` and `.dropdown-menu{-sm|-md|-lg|-xl|-xxl}-left`.
+To align **left** the dropdown menu with the given breakpoint or larger, add `.dropdown-menu-end` and `.dropdown-menu{-sm|-md|-lg|-xl|-xxl}-left`.
 
 {{< example >}}
 <div class="btn-group">
   <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" data-display="static" aria-expanded="false">
     Right-aligned but left aligned when large screen
   </button>
-  <ul class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left">
+  <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
     <li><button class="dropdown-item" type="button">Action</button></li>
     <li><button class="dropdown-item" type="button">Another action</button></li>
     <li><button class="dropdown-item" type="button">Something else here</button></li>
@@ -741,7 +746,7 @@ Use `data-offset` or `data-reference` to change the location of the dropdown.
 
 {{< example >}}
 <div class="d-flex">
-  <div class="dropdown mr-1">
+  <div class="dropdown me-1">
     <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-expanded="false" data-offset="10,20">
       Offset
     </button>
