@@ -8,7 +8,7 @@
 import { getjQuery } from './util/index'
 import Data from './dom/data'
 import EventHandler from './dom/event-handler'
-import BaseComponent from '../base-component'
+import BaseComponent from './base-component'
 
 /**
  * ------------------------------------------------------------------------

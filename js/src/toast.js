@@ -16,7 +16,7 @@ import {
 import Data from './dom/data'
 import EventHandler from './dom/event-handler'
 import Manipulator from './dom/manipulator'
-import BaseComponent from '../base-component'
+import BaseComponent from './base-component'
 
 /**
  * ------------------------------------------------------------------------

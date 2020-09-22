@@ -25,7 +25,7 @@ import EventHandler from './dom/event-handler'
 import Manipulator from './dom/manipulator'
 import Popper from 'popper.js'
 import SelectorEngine from './dom/selector-engine'
-import BaseComponent from '../base-component'
+import BaseComponent from './base-component'
 
 /**
  * ------------------------------------------------------------------------
